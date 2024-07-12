@@ -26,8 +26,8 @@ This repository contains a Spring Boot application that demonstrates CRUD operat
 ### Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/KoushalKumar22/Springboot-Dto-Projection-with-ModelMapper.git)
+   cd Springboot-Dto-Projection-with-ModelMapper
 2. Build the project:
    ```sh
      mvn clean install
