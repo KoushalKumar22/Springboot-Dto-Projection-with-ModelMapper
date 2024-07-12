@@ -16,10 +16,7 @@ public class EmployeeDto {
         this.city = city;
     }
 
-    public EmployeeDto(int id, String fname, String lname) {
-        this.id = id;
-        this.fname = fname;
-        this.lname = lname;
+    public EmployeeDto() {
     }
 
     public int getId() {
