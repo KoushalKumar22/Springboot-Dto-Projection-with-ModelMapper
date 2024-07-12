@@ -3,7 +3,7 @@ package com.example.ProjectionMapper.Entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "Employee")
+@Table(name = "employee")
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
