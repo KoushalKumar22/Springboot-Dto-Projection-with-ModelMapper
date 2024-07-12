@@ -14,8 +14,12 @@ import java.util.List;
 public interface EmployeeRepository extends JpaRepository<Employee,Integer> {
 
     @Query("select new com.example.ProjectionMapper.DTO.SearchDto(a.id,a.fname,a.lname) from Employee a where a.id= :id")
-    List<SearchDto> getById(@Param("id") int id);
+    List<SearchDto> getById(int id);
 
-    ///@Query("select new com.example.ProjectionMapper.DTO.EmployeeDto(a.id,a.fname,a.lname) from employee a where a.fname= :fname")
-    //    EmployeeDto getByFname(String fname);
+    @Query("select new com.example.ProjectionMapper.DTO.SearchDto(a.id,a.fname,a.lname) from Employee a where a.fname= :fname")
+        List<SearchDto> getByFname(String fname);
+
+//    @Query("select new com.example.ProjectionMapper.DTO.SearchDto(a.id,a.fname,a.lname,a.sal) from Employee a where a.sal= :sal")
+//    List<SearchDto> getBySal(int sal);
+
 }

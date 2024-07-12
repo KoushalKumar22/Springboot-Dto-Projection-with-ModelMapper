@@ -45,4 +45,11 @@ public class EmployeeController {
     public List<SearchDto> findById(@PathVariable int id){
         return erepo.getById(id);
     }
+
+    @GetMapping("/name/{fname}")
+    public List<SearchDto> findByFname(@PathVariable String fname){
+        return erepo.getByFname(fname);
+    }
+
+
 }

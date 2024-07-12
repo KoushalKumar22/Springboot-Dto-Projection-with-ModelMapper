@@ -6,6 +6,25 @@ public class SearchDto {
 
     String lname;
 
+//    int sal;
+//
+//    public SearchDto(int id, String fname, String lname, int sal) {
+//        this.id = id;
+//        this.fname = fname;
+//        this.lname = lname;
+//        this.sal = sal;
+//    }
+//
+//
+//    public int getSal() {
+//        return sal;
+//    }
+//
+//    public void setSal(int sal) {
+//        this.sal = sal;
+//    }
+
+
     public SearchDto(int id, String fname, String lname) {
         this.id = id;
         this.fname = fname;
